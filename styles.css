@@ -22,13 +22,19 @@ body {
 header {
     background: linear-gradient(135deg, #1e3a5f, #2d5a87);
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    text-align: left;
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 header p {
@@ -38,8 +44,7 @@ header p {
 
 /* Navigation */
 nav {
-    background-color: #2d5a87;
-    padding: 15px 0;
+    padding: 0;
 }
 
 nav ul {
@@ -390,6 +395,17 @@ ul.styled-list li::before {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo-section {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
